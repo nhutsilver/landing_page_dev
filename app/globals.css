@@ -1,0 +1,78 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-main-gradient: linear-gradient(to right, #4f46e5, #6366f1);
+}
+
+/* Resetting margin and padding */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Removing default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Removing default link styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Removing default form input styling */
+input,
+button,
+textarea,
+select {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+
+/* Making sure images don't have extra space below */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensuring consistent font rendering */
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+@keyframes counterclockwise {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.hero-images {
+  animation: counterclockwise 3s infinite ease-in-out;
+}
